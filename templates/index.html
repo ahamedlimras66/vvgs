@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>VICTORY VENTURA GLOBAL SERVICES</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="/static/css/pogo-slider.min.css" />
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/static/css/responsive.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/custom.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+<style type="text/css">
+#overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: #000;
+filter:alpha(opacity=70);
+-moz-opacity:0.7;
+-khtml-opacity: 0.7;
+opacity: 0.7;
+z-index: 100;
+display: none;
+}
+.cnt223 a{
+text-decoration: none;
+}
+.popup{
+width: 100%;
+margin: 0 auto;
+display: none;
+position: fixed;
+z-index: 101;
+}
+.cnt223{
+min-width: 60px;
+width: 300px;
+min-height: 500px;
+margin: 100px auto;
+background: #073ba9;
+position: relative;
+z-index: 103;
+padding: 15px 35px;
+border-radius: 5px;
+box-shadow: 0 2px 5px #000;
+}
+.cnt223 p{
+clear: both;
+    color: #faf5f4;
+    /* text-align: justify; */
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.cnt223 p a{
+color: #d91900;
+font-weight: bold;
+}
+.cnt223 .x{
+float: right;
+height: 35px;
+left: 22px;
+position: relative;
+top: -25px;
+width: 34px;
+}
+.cnt223 .x:hover{
+cursor: pointer;
+}
+</style>
+
+  <style>
+    .btn {
+      background-color: gold;
+      border: none;
+      color: white;
+      padding: 12px 19px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Darker background on mouse-over */
+    .btn:hover {
+      background-color: RoyalBlue;
+    }
+    .wrapper {
+  height: 30vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 50ch;
+  animation: typing 8s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  background-color: orange;
+  border-right: 3px solid;
+  font-family: monospace;
+  animation-iteration-count: 100;
+  font-size: 1em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+.serviceBox{
+    color: #888;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 0 15px;
+    margin: 0 -15px;
+    position: relative;
+    z-index: 1;
+}
+.serviceBox:before,
+.serviceBox:after{
+    content: '';
+    background-color: #2F957B;
+    height: 12px;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    top: 100px;
+}
+.serviceBox:after{
+    background-color: #3EAA93;
+    left: auto;
+    right: 0;
+}
+.serviceBox .service-icon{
+    color: #fff;
+    background: linear-gradient(to right,#3EAA93 50%,#2F957B 50%);
+    font-size: 40px;
+    text-align: center;
+    line-height: 110px;
+    height: 110px;
+    width: 110px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    position: relative;
+}
+.serviceBox .service-icon:before{
+    content: '';
+    border: 8px solid #fff;
+    border-radius: inherit;
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    top: 12px;
+    bottom: 12px;
+}
+.serviceBox .title{
+    color: #3EAA93;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+    border-bottom: 1px solid #3EAA93;
+    display: inline-block;
+}
+.serviceBox .description{
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+.serviceBox.blue:before{ background-color: #377BDF; }
+.serviceBox.blue:after{ background-color: #588ef4; }
+.serviceBox.blue .service-icon{ background: linear-gradient(to right,#588ef4 50%,#377BDF 50%); }
+.serviceBox.blue .title{
+    color: #588ef4;
+    border-color: #588ef4;
+}
+.serviceBox.pink:before{ background-color: #DA3775; }
+.serviceBox.pink:after{ background-color: #EA4F7C; }
+.serviceBox.pink .service-icon{ background: linear-gradient(to right,#EA4F7C 50%,#DA3775 50%); }
+.serviceBox.pink .title{
+    color: #EA4F7C;
+    border-color: #EA4F7C;
+}
+.serviceBox.orange:before{ background-color: #F97132; }
+.serviceBox.orange:after{ background-color: #FC8756; }
+.serviceBox.orange .service-icon{ background: linear-gradient(to right,#FC8756 50%,#F97132 50%); }
+.serviceBox.orange .title{
+    color: #FC8756;
+    border-color: #FC8756;
+}
+@media only screen and (max-width: 990px){
+    .serviceBox{ margin: 0 -15px 30px; }
+}
+@media only screen and (max-width: 767px){
+    .serviceBox{ margin: 0 0 30px; }
+}
+  </style>
+  <script type='text/javascript'>
+  $(function(){
+  var overlay = $('<div id="overlay"></div>');
+  overlay.show();
+  overlay.appendTo(document.body);
+  $('.popup').show();
+  $('.close').click(function(){
+  $('.popup').hide();
+  overlay.appendTo(document.body).remove();
+  return false;
+  });
+
+
+
+
+  $('.x').click(function(){
+  $('.popup').hide();
+  overlay.appendTo(document.body).remove();
+  return false;
+  });
+  });
+  </script>
+</head>
+
+
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="/static/images/logo.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"><img src="/static/images/logof.png" alt="image" width="300" height="200"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="/">Home</a></li>
+                        <li><a class="nav-link" href="#about">About</a></li>
+                        <li><a class="nav-link" href="#service">Services</a></li>
+						<li><a class="nav-link" href="#contact">Contact us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+    <!-- Start Banner -->
+    <div class="ulockd-home-slider">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="pogoSlider" id="js-main-slider">
+                    <div class="pogoSlider-slide" style="background-image:url(static/images/banner_img.png);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="slide_text">
+
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pogoSlider-slide" style="background-image:url(static/images/banner_img.png);">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="slide_text">
+                                      <h3><span span class="theme_color"></span><br></h3>
+                                      <h4></h4>
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- .pogoSlider -->
+            </div>
+        </div>
+    </div>
+    <!-- End Banner -->
+    <!-- section -->
+	<div class="section tabbar_menu">
+	   <div class="container">
+	      <div class="row">
+		      <div class="col-md-12">
+			     <div class="tab_menu">
+				    <ul>
+					   <li><a href="#"><span class="icon"><img src="/static/images/i1.png" alt="#" /></span><span>Training</span></a></li>
+					   <li><a href="#"><span class="icon"><img src="/static/images/i2.png" alt="#" /></span><span> BPO</span></a></li>
+					   <li><a href="#"><span class="icon"><img src="/static/images/i3.png" alt="#" /></span><span>KPO</span></a></li>
+					   <li><a href="#"><span class="icon"><img src="/static/images/i4.png" alt="#" /></span><span> OVERSEAS CONSULTANT</span></a></li>
+					   <li><a href="https://wa.me/917904317803/?text= Hai 3 Whistle , "><span class="icon"><img src="/static/images/i5.png" alt="#" /></span><span>Whatsapp</span></a></li>
+					   <li><a href="mailto:ceo@ownustech.in subject="Joining in Test""><span class="icon"><img src="/static/images/i6.png" alt="#" /></span><span>Email</span></a></li>
+					   <li><a href="tel:+917904317803"><span class="icon"><img src="/static/images/i7.png" alt="#" /></span><span>Call us</span></a></li>
+					</ul>
+				 </div>
+			  </div>
+		  </div>
+	   </div>
+	</div>
+	<!-- end section -->
+
+
+	<!-- section -->
+    <div class="section margin-top_50">
+        <div class="container">
+          <div class="wrapper">
+        <div class="typing-demo">
+
+
+        </div>
+        </div>
+            <div class="row">
+
+                <div class="col-md-6 layout_padding_2">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+						   <h2><span>Welcome To</span> VVGS </h2>
+
+                        </div>
+						<div class="full">
+              <h2><span></span><b>We Are Creator's / Designer's</b></h2>
+            <p>Victory Ventura Global Services is devising, designing and creators on Web and Mobile App developments, IoT and Cloud, Data Science Services such as leveraging Artificial Intelligence and Machine Learning Technologies to build higher value technical solutions worldwide.</p>
+
+
+
+</div>
+
+                    </div>
+                </div>
+				<div class="col-md-6">
+                    <div class="full">
+                        <img src="/static/images/l.gif" alt="#" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!-- end section -->
+	<!-- section -->
+  <br>
+  <br>
+  <br>
+
+    <div class="section layout_padding">
+      <div id="service" class="container-fluid text-center">
+        <div class="heading_main text_align_center">
+<h2><span>Service's</span></h2>
+        </div>
+
+      <div class="container">
+        <div class="row">
+
+            <div class="col-md-3 col-sm-6">
+              <br>
+              <br>
+                <div class="serviceBox">
+                    <div class="service-icon">
+
+                        <span><i> <img src="https://img.icons8.com/ios-filled/50/ffffff/training.png"/></i></span>
+                    </div>
+
+                    <h3 class="title">TRAINING </h3>
+                    <p class="description">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <br>
+              <br>
+                <div class="serviceBox blue">
+                    <div class="service-icon">
+                        <span><i>  <img src="/static/images/bpo.png" alt="#" width="50" height="50" /></i></span>
+                    </div>
+                    <h3 class="title">BPO</h3>
+                    <p class="description">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <br>
+              <br>
+                <div class="serviceBox blue">
+                    <div class="service-icon">
+                        <span><i>  <img src="/static/images/kpo.png" alt="#" width="50" height="50" /></i></span>
+                    </div>
+                    <h3 class="title">KPO</h3>
+                    <p class="description">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <br>
+              <br>
+                <div class="serviceBox">
+                    <div class="service-icon">
+                      <span><i>  <img src="/static/images/co.png" alt="#" width="50" height="50" /></i></span>
+                    </div>
+                    <h3 class="title">OVERSEAS CONSULTANT</h3>
+                    <p class="description">Lorem ipsum dolor sit amet conse ctetur adipisicing elit. Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+	<!-- end section -->
+	<!-- section -->
+  <div id="about" class="about">
+    <div class="section margin-top_50 silver_bg">
+        <div class="container">
+            <div class="row">
+			    <div class="col-md-6">
+                    <div class="full float-right_img">
+                        <img src="/static/images/b.gif" alt="#" />
+                    </div>
+                </div>
+                <div class="col-md-6 layout_padding_2">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+						   <h2><span>About</span> Victory Ventura Global Services  </h2>
+                        </div>
+						<div class="full">
+
+              <br>
+               <p>With Victory Ventura Global Services, you can get a secure and steady development especially in IT sector-based projects developing and updating with the latest technologies. Because we are always aware of Changes in customer behaviors which make business development vital. In, this way we provide service support, guidance’s for the startup, lift-off in the IT firms, and other business ventures. As a responsible corporate, we proudly say your one-stop destination for your company or business development is Victory Ventura Global Services.</p>
+</div>
+					  </div>
+                </div>
+			</div>
+        </div>
+    </div>
+    </div>
+	<!-- end section -->
+	<!-- section -->
+
+    <div class="section layout_padding padding_bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+						   <h2><span>Giving 100 % to our Clients</span></h2>
+                        </div>
+						<div class="full">
+						  <p>Companies who choose our firm to rely on competent advice and fast, accurate personnel. We provide a good service to them. It is possible to us by delivering the expected results which highly satisfy our clients, as well as Victory Ventura Global Services having a good client relationship beyond the business.</p>
+          	</div>
+
+                    </div>
+                </div>
+				<div class="col-md-6">
+                        <img class="img-responsive" src="/static/images/img11.gif" alt="#" width="650px" height="450px"/>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    		</div>
+
+<br>
+<br>
+        <div id="about" class="about">
+          <div class="section layout_padding padding_bottom-0">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="full">
+
+                              <img class="img-responsive" src="/static/images/a1.gif" alt="#" width="650px" height="450px"/>
+
+
+
+                          </div>
+                      </div>
+              <div class="col-md-6">  <div class="full">
+                <div class="heading_main text_align_left">
+       <h2><span>Victory Ventura Global Services Responsibility</span></h2>
+                </div>
+                <br>            <br>
+                            <br>
+                                        <br>
+                                                    <br>
+                                                                <br>
+                                                                            <br>
+
+<p>Our company tracks the factor and work on improving it in order to make our clients our brand ambassadors. It is possible only by dedicating ourselves to the client's expectations and satisfaction. Victory Ventura Global Servicesis responsible for your success.</p>
+
+                </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+              </div>
+	<!-- end section -->
+
+  <br>
+    <br>
+
+      <br>
+        <br>
+          <br>
+            <br>
+              <br>
+<!--  <div id="services" class="container-fluid text-center">
+  <h2><b><span>COMPANY SPECIFIC TEST PACKAGES</span></b></h2>
+
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+        <img class="img-responsive" src="/static/images/tcs.png" alt="#" width="150px" height="150px" />
+      <span class="glyphicon glyphicon-off logo-small"></span>
+
+
+    </div>
+    <div class="col-sm-4">
+        <img class="img-responsive" src="/static/images/c1.png" alt="#" width="150px" height="150px" />
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+
+
+    </div>
+    <div class="col-sm-4">
+        <img class="img-responsive" src="/static/images/c2.png" alt="#" width="150px" height="150px" />
+      <span class="glyphicon glyphicon-lock logo-small"></span>
+
+
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+        <img class="img-responsive" src="/static/images/c3.png" alt="#" width="150px" height="150px" />
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+
+
+    </div>
+    <div class="col-sm-4">
+        <img class="img-responsive" src="/static/images/c4.png" alt="#" width="150px" height="150px" />
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+
+
+    </div>
+    <div class="col-sm-4">
+        <img class="img-responsive" src="/static/images/c5.png" alt="#" width="150px" height="150px" />
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+
+
+    </div>
+  </div>
+</div>-->
+	<!-- section -->
+  <div id="contact" class="contact">
+    <div class="section layout_padding padding_bottom-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_center">
+						   <h2><span>Contact</span></h2>
+                        </div>
+					  </div>
+                </div>
+			  </div>
+           </div>
+        </div>
+        </div>
+	<!-- end section -->
+	<!-- section -->
+    <div class="section contact_section" style="background:#12385b;">
+        <div class="container">
+               <div class="row">
+                 <div class="col-lg-6 col-md-6 col-sm-12">
+				    <div class="full float-right_img">
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <br>
+              <br><br>
+                <br><br>
+
+
+              <br>
+<a href="tel:+917904317803"><button class="btn"><i class="fa fa-phone" style="font-size:26px"></i>  Call</button></a>
+<a href="https://wa.me/917904317803/?text= Hai 3 Whistle , "><button class="btn"><i class="fa fa-whatsapp" style="font-size:26px"></i>  Whatsapp</button></a>
+<a href="mailto:ceo@ownustech.in subject="Joining in Test""><button class="btn"><i class="fa fa-envelope" style="font-size:26px"></i>  Gmail</button></a>
+
+
+
+                    </div>
+                 </div>
+				 <div class="layout_padding col-lg-6 col-md-6 col-sm-12">
+				    <div class="contact_form">
+					    <form action="/contact">
+						   <fieldset>
+						       <div class="full field">
+							      <input type="text" placeholder="Your Name" name="your name" />
+							   </div>
+							   <div class="full field">
+							      <input type="email" placeholder="Email Address" name="Email" />
+							   </div>
+							   <div class="full field">
+							      <input type="phn" placeholder="Phone Number" name="Phone number" />
+							   </div>
+							   <div class="full field">
+							      <textarea placeholder="Massage"></textarea>
+							   </div>
+							   <div class="full field">
+							      <div class="center"><button>Send</button></div>
+							   </div>
+						   </fieldset>
+						</form>
+					</div>
+                 </div>
+               </div>
+           </div>
+        </div>
+	<!-- end section -->
+
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                <a href="https://ownustech.in/">   <p class="crp">© Copyrights 2021 design by Own UsTechnologies
+</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="/static/js/jquery.min.js"></script>
+	<script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <script src="/static/js/jquery.pogo-slider.min.js"></script>
+    <script src="/static/js/slider-index.js"></script>
+    <script src="/static/js/smoothscroll.js"></script>
+    <script src="/static/js/form-validator.min.js"></script>
+    <script src="/static/js/contact-form-script.js"></script>
+    <script src="/static/js/isotope.min.js"></script>
+    <script src="/static/js/images-loded.min.js"></script>
+    <script src="/static/js/custom.js"></script>
+	<script>
+	/* counter js */
+
+(function ($) {
+	$.fn.countTo = function (options) {
+		options = options || {};
+
+		return $(this).each(function () {
+			// set options for current element
+			var settings = $.extend({}, $.fn.countTo.defaults, {
+				from:            $(this).data('from'),
+				to:              $(this).data('to'),
+				speed:           $(this).data('speed'),
+				refreshInterval: $(this).data('refresh-interval'),
+				decimals:        $(this).data('decimals')
+			}, options);
+
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(settings.speed / settings.refreshInterval),
+				increment = (settings.to - settings.from) / loops;
+
+			// references & variables that will change with each update
+			var self = this,
+				$self = $(this),
+				loopCount = 0,
+				value = settings.from,
+				data = $self.data('countTo') || {};
+
+			$self.data('countTo', data);
+
+			// if an existing interval can be found, clear it first
+			if (data.interval) {
+				clearInterval(data.interval);
+			}
+			data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+			// initialize the element with the starting value
+			render(value);
+
+			function updateTimer() {
+				value += increment;
+				loopCount++;
+
+				render(value);
+
+				if (typeof(settings.onUpdate) == 'function') {
+					settings.onUpdate.call(self, value);
+				}
+
+				if (loopCount >= loops) {
+					// remove the interval
+					$self.removeData('countTo');
+					clearInterval(data.interval);
+					value = settings.to;
+
+					if (typeof(settings.onComplete) == 'function') {
+						settings.onComplete.call(self, value);
+					}
+				}
+			}
+
+			function render(value) {
+				var formattedValue = settings.formatter.call(self, value, settings);
+				$self.html(formattedValue);
+			}
+		});
+	};
+
+	$.fn.countTo.defaults = {
+		from: 0,               // the number the element should start at
+		to: 0,                 // the number the element should end at
+		speed: 1000,           // how long it should take to count between the target numbers
+		refreshInterval: 100,  // how often the element should be updated
+		decimals: 0,           // the number of decimal places to show
+		formatter: formatter,  // handler for formatting the value before rendering
+		onUpdate: null,        // callback method for every time the element is updated
+		onComplete: null       // callback method for when the element finishes updating
+	};
+
+	function formatter(value, settings) {
+		return value.toFixed(settings.decimals);
+	}
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+	formatter: function (value, options) {
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	}
+  });
+
+  // start all the timers
+  $('.timer').each(count);
+
+  function count(options) {
+	var $this = $(this);
+	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	$this.countTo(options);
+  }
+});
+	</script>
+</body>
+
+</html>
